@@ -3,7 +3,7 @@ Following the official [***Unity Tanks course***](https://learn.unity.com/course
 
 ---
 
-## Teck Stack
+## Tech Stack
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=unity" height="40" />
