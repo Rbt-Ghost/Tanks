@@ -392,6 +392,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tank 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3923733563638802387, guid: 2258314ddcd8c69409ebd2f15baf144a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661014634841434619, guid: 2258314ddcd8c69409ebd2f15baf144a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661014634841434619, guid: 2258314ddcd8c69409ebd2f15baf144a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7565770168648527956, guid: 2258314ddcd8c69409ebd2f15baf144a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.94
@@ -918,6 +930,18 @@ PrefabInstance:
     - target: {fileID: 705560543065890855, guid: 2258314ddcd8c69409ebd2f15baf144a, type: 3}
       propertyPath: m_Name
       value: Tank 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923733563638802387, guid: 2258314ddcd8c69409ebd2f15baf144a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661014634841434619, guid: 2258314ddcd8c69409ebd2f15baf144a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661014634841434619, guid: 2258314ddcd8c69409ebd2f15baf144a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7565770168648527956, guid: 2258314ddcd8c69409ebd2f15baf144a, type: 3}
       propertyPath: m_LocalPosition.x
