@@ -227,8 +227,8 @@ MonoBehaviour:
   m_ShootingAudio: {fileID: 3818394903401112536}
   m_ChargingClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
   m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
-  m_MinLaunchForce: 5
-  m_MaxLaunchForce: 20
+  m_MinLaunchForce: 10
+  m_MaxLaunchForce: 30
   m_MaxChargeTime: 0.75
   m_ShotCooldown: 1
   m_MaxDamage: 100
@@ -582,10 +582,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 5661014634841434619}
   m_HandleRect: {fileID: 0}
   m_Direction: 2
-  m_MinValue: 5
-  m_MaxValue: 20
+  m_MinValue: 10
+  m_MaxValue: 30
   m_WholeNumbers: 0
-  m_Value: 20
+  m_Value: 30
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
