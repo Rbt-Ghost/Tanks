@@ -248,6 +248,11 @@ namespace Tanks.Complete
             // Apply this movement to the rigidbody's position.
             m_Rigidbody.linearVelocity = movement + m_ExplosionForceValue;
             m_ExplosionForceValue = Vector3.Lerp(m_ExplosionForceValue, Vector3.zero, Time.deltaTime * 3f); // 3f = braking speed
+
+            if (m_Rigidbody.linearVelocity.magnitude > m_Speed)
+            {
+                m_Rigidbody.linearVelocity = m_Rigidbody.linearVelocity.normalized * m_Speed;
+            }
         }
 
 
