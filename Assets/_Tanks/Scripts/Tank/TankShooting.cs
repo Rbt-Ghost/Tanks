@@ -50,6 +50,8 @@ namespace Tanks.Complete
         
         private void OnEnable()
         {
+            m_AimSlider.gameObject.SetActive(false);
+
             // When the tank is turned on, reset the launch force, the UI and the power ups
             m_CurrentLaunchForce = m_MinLaunchForce;
             m_BaseMinLaunchForce = m_MinLaunchForce;
@@ -146,51 +148,52 @@ namespace Tanks.Complete
                 m_IsCharging = false;
             }
         }
-        
-        void HumanUpdate()
-        {
-            // if there is a cooldown timer, decrement it
-            if (m_ShotCooldownTimer > 0.0f)
-            {
-                m_ShotCooldownTimer -= Time.deltaTime;
-            }
-            
-            // The slider should have a default value of the minimum launch force.
-            m_AimSlider.value = m_BaseMinLaunchForce;
 
-            // If the max force has been exceeded and the shell hasn't yet been launched...
-            if (m_CurrentLaunchForce >= m_MaxLaunchForce && !m_Fired)
+        private void HumanUpdate()
+        {
+            // Decrease cooldown timer if active
+            if (m_ShotCooldownTimer > 0f)
+                m_ShotCooldownTimer -= Time.deltaTime;
+
+            // Reset slider to minimum each frame
+            m_AimSlider.value = m_MinLaunchForce;
+
+            // 🔹 Start charging the shot
+            if (fireAction.WasPressedThisFrame() && m_ShotCooldownTimer <= 0f)
             {
-                // ... use the max force and launch the shell.
-                m_CurrentLaunchForce = m_MaxLaunchForce;
-                Fire ();
-            }
-            // Otherwise, if the fire button has just started being pressed...
-            else if (m_ShotCooldownTimer <= 0 && fireAction.WasPressedThisFrame())
-            {
-                // ... reset the fired flag and reset the launch force.
                 m_Fired = false;
                 m_CurrentLaunchForce = m_MinLaunchForce;
 
-                // Change the clip to the charging clip and start it playing.
                 m_ShootingAudio.clip = m_ChargingClip;
-                m_ShootingAudio.Play ();
+                m_ShootingAudio.Play();
+
+                // Show the power slider while charging
+                m_AimSlider.gameObject.SetActive(true);
             }
-            // Otherwise, if the fire button is being held and the shell hasn't been launched yet...
+            // 🔹 While holding the fire button, increase launch force
             else if (fireAction.IsPressed() && !m_Fired)
             {
-                // Increment the launch force and update the slider.
                 m_CurrentLaunchForce += m_ChargeSpeed * Time.deltaTime;
-
                 m_AimSlider.value = m_CurrentLaunchForce;
+
+                // Auto-fire if max charge reached
+                if (m_CurrentLaunchForce >= m_MaxLaunchForce)
+                {
+                    m_CurrentLaunchForce = m_MaxLaunchForce;
+                    Fire();
+
+                    m_AimSlider.gameObject.SetActive(false);
+                }
             }
-            // Otherwise, if the fire button is released and the shell hasn't been launched yet...
+            // 🔹 Fire when button is released
             else if (fireAction.WasReleasedThisFrame() && !m_Fired)
             {
-                // ... launch the shell.
-                Fire ();
+                Fire();
+                m_AimSlider.gameObject.SetActive(false);
             }
         }
+
+
 
 
         private void Fire ()
