@@ -3,6 +3,17 @@ Following the official [***Unity Tanks course***](https://learn.unity.com/course
 
 ---
 
+## 🎮 Gameplay
+
+- Drive a tank on the battle field.  
+- Avoid being hit by enemy missels.  
+- Destroy your enemy before they destroy you.
+- First to win 3 times is the winner!  
+
+Simple mechanics, endless fun.
+
+---
+
 ## Tech Stack
 
 <p align="left">
