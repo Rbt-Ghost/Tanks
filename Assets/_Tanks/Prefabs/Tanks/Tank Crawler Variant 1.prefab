@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1452688154164492350
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 286268362584516166, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 286268362584516166, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1195739917783850087, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704959941264834537, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.300003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704959941264834537, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704959941264834537, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 56.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704959941264834537, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704959941264834537, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704959941264834537, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704959941264834537, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704959941264834537, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704959941264834537, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704959941264834537, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830292600467535904, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 19e21783c8d3fbb428a1f5e8354553f0, type: 2}
+    - target: {fileID: 4216173424565603049, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_PlayerNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952929130090065818, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_Name
+      value: Tank Crawler Variant 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952929130090065818, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6140910646656014776, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_StartingHealth
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682140350788385077, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682140350788385077, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386741317212571165, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_MaxDamage
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386741317212571165, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_ExplosionForce
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386741317212571165, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: m_ExplosionRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221654565054000010, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 19e21783c8d3fbb428a1f5e8354553f0, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fab68e5a63c2b4740920b8d8ebaaebb5, type: 3}
