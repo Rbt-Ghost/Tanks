@@ -14,6 +14,10 @@ Simple mechanics, endless fun.
 
 ---
 
+You can download the game for free on [here](https://rbt-ghost.itch.io/tanks).
+
+---
+
 ## Tech Stack
 
 <p align="left">
